@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Cors.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
 namespace AWSServerlessWebApi
 {
@@ -26,10 +29,26 @@ namespace AWSServerlessWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
+            //services.AddDbContext<BloggingContext>(options =>
+            //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectString")));
             // Add S3 to the ASP.NET Core dependency injection framework.
             services.AddAWSService<Amazon.S3.IAmazonS3>();
             services.AddSingleton<Services.IPatientDetailsService, Services.PatientDetailsService>();
+            var corsBuilder = new CorsPolicyBuilder();
+            corsBuilder.AllowAnyHeader();
+            corsBuilder.AllowAnyMethod();
+            corsBuilder.AllowAnyOrigin(); // For anyone access.
+            //corsBuilder.WithOrigins("http://localhost:56573"); // for a specific url. Don't add a forward slash on the end!
+            corsBuilder.AllowCredentials();
+
+          
+            //     services.AddDbContext<BloggingContext>(options =>
+            //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectString")));
+            services.AddCors(options =>
+            {
+                options.AddPolicy("SiteCorsPolicy", corsBuilder.Build());
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline
@@ -44,8 +63,12 @@ namespace AWSServerlessWebApi
                 app.UseHsts();
             }
 
+            app.UseCors("AllowMyOrigin");
             app.UseHttpsRedirection();
             app.UseMvc();
         }
+
+
+
     }
 }

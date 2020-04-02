@@ -24,13 +24,19 @@ namespace AWSServerlessWebApi.Services
 
             SqlConnection conn = new SqlConnection("Server = demosql001.cc4mi4fhf4fo.ap-southeast-2.rds.amazonaws.com; Database = WHADemo; User Id = whadevfe; Password = 4MeW3%T7JxMA;");
             SqlCommand cmd = new SqlCommand("POBPatientSave", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
+
+            ////string connectionString = "Data Source=DESKTOP-SK0EJ1N;Initial Catalog=testdatabase;Integrated Security=True";
+            //SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
-            SqlCommandBuilder.DeriveParameters(cmd);
+            //SqlCommand cmd = new SqlCommand("INSERT INTO Persons;", conn);
+
+            //cmd.CommandType = CommandType.StoredProcedure;
+            //SqlCommandBuilder.DeriveParameters(cmd);
             foreach (SqlParameter p in cmd.Parameters)
             {
                 PersonalDetailsDict.Add(p.ParameterName, p_Details.CountryID);
                 Console.WriteLine(p.ParameterName);
+
             }
 
            

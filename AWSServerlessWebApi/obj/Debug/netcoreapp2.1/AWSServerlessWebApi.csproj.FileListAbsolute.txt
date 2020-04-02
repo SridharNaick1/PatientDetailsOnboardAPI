@@ -18,3 +18,17 @@ C:\Users\sridh\source\repos\AWSServerlessWebApi\AWSServerlessWebApi\bin\Debug\ne
 C:\Users\sridh\source\repos\AWSServerlessWebApi\AWSServerlessWebApi\obj\Debug\netcoreapp2.1\AWSServerlessWebApi.csproj.CoreCompileInputs.cache
 C:\Users\sridh\source\repos\AWSServerlessWebApi\AWSServerlessWebApi\obj\Debug\netcoreapp2.1\AWSServerlessWebApi.dll
 C:\Users\sridh\source\repos\AWSServerlessWebApi\AWSServerlessWebApi\obj\Debug\netcoreapp2.1\AWSServerlessWebApi.pdb
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\bin\Debug\netcoreapp2.1\AWSServerlessWebApi.deps.json
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\bin\Debug\netcoreapp2.1\AWSServerlessWebApi.runtimeconfig.json
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\bin\Debug\netcoreapp2.1\AWSServerlessWebApi.runtimeconfig.dev.json
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\bin\Debug\netcoreapp2.1\AWSServerlessWebApi.dll
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\bin\Debug\netcoreapp2.1\AWSServerlessWebApi.pdb
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\obj\Debug\netcoreapp2.1\AWSServerlessWebApi.csproj.CoreCompileInputs.cache
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\obj\Debug\netcoreapp2.1\AWSServerlessWebApi.RazorAssemblyInfo.cache
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\obj\Debug\netcoreapp2.1\AWSServerlessWebApi.RazorAssemblyInfo.cs
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\obj\Debug\netcoreapp2.1\AWSServerlessWebApi.AssemblyInfoInputs.cache
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\obj\Debug\netcoreapp2.1\AWSServerlessWebApi.AssemblyInfo.cs
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\obj\Debug\netcoreapp2.1\AWSServerlessWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\obj\Debug\netcoreapp2.1\AWSServerlessWebApi.dll
+C:\Users\gohan\OneDrive\Documents\someproject\PatientDetailsOnboardAPI\AWSServerlessWebApi\obj\Debug\netcoreapp2.1\AWSServerlessWebApi.pdb
