@@ -13052,11 +13052,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gohan\\OneDrive\\Documents\\someproject\\PatientDetailsOnboardAPI\\AWSServerlessWebApi\\AWSServerlessWebApi.csproj",
+      "projectUniqueName": "C:\\Users\\gohan\\Documents\\someproject\\PatientDetailsOnboardAPI\\AWSServerlessWebApi\\AWSServerlessWebApi.csproj",
       "projectName": "AWSServerlessWebApi",
-      "projectPath": "C:\\Users\\gohan\\OneDrive\\Documents\\someproject\\PatientDetailsOnboardAPI\\AWSServerlessWebApi\\AWSServerlessWebApi.csproj",
+      "projectPath": "C:\\Users\\gohan\\Documents\\someproject\\PatientDetailsOnboardAPI\\AWSServerlessWebApi\\AWSServerlessWebApi.csproj",
       "packagesPath": "C:\\Users\\gohan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gohan\\OneDrive\\Documents\\someproject\\PatientDetailsOnboardAPI\\AWSServerlessWebApi\\obj\\",
+      "outputPath": "C:\\Users\\gohan\\Documents\\someproject\\PatientDetailsOnboardAPI\\AWSServerlessWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

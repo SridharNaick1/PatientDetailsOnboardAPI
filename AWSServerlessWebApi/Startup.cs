@@ -34,20 +34,24 @@ namespace AWSServerlessWebApi
             // Add S3 to the ASP.NET Core dependency injection framework.
             services.AddAWSService<Amazon.S3.IAmazonS3>();
             services.AddSingleton<Services.IPatientDetailsService, Services.PatientDetailsService>();
-            var corsBuilder = new CorsPolicyBuilder();
-            corsBuilder.AllowAnyHeader();
-            corsBuilder.AllowAnyMethod();
-            corsBuilder.AllowAnyOrigin(); // For anyone access.
-            //corsBuilder.WithOrigins("http://localhost:56573"); // for a specific url. Don't add a forward slash on the end!
-            corsBuilder.AllowCredentials();
+            services.AddSingleton<Services.IPatientEmploymentService, Services.PatientEmploymentService>();
+            services.AddSingleton<Services.IPatientLocationService, Services.PatientLocationService>();
+            //var corsBuilder = new CorsPolicyBuilder();
+            //corsBuilder.AllowAnyHeader();
+            //corsBuilder.AllowAnyMethod();
+            //corsBuilder.AllowAnyOrigin(); // For anyone access.
+            ////corsBuilder.WithOrigins("http://localhost:3000"); // for a specific url. Don't add a forward slash on the end!
+            //corsBuilder.AllowCredentials();
 
-          
+
             //     services.AddDbContext<BloggingContext>(options =>
             //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectString")));
-            services.AddCors(options =>
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
             {
-                options.AddPolicy("SiteCorsPolicy", corsBuilder.Build());
-            });
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
 
         }
 
@@ -63,7 +67,7 @@ namespace AWSServerlessWebApi
                 app.UseHsts();
             }
 
-            app.UseCors("AllowMyOrigin");
+            //app.UseCors("MyPolicy");
             app.UseHttpsRedirection();
             app.UseMvc();
         }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AWSServerlessWebApi.Models
 {
-    public class PatientDetailModel
+    public class rawdata
     {
         public int POBPatientID { get; set; }
         public int PatientID { get; set; }
@@ -33,14 +33,26 @@ namespace AWSServerlessWebApi.Models
         public int SelectedEntityType { get; set; }
         public int PreviousWorkCompClaim { get; set; }
         public string PreviousWorkCompClaimDetails { get; set; }
+        public int POBPatientEmploymentID { get; set; }
+        public DateTime CreateDate { get; set; }
+        public string CurrentPosition { get; set; }
+        public DateTime EmpStartDate { get; set; }
+        public string EmpDepartment { get; set; }
+        public int CurrentDutiesID { get; set; }
+        public int EmploymentStatusID { get; set; }
+        public int OccupationID { get; set; }
+        public int AddressID { get; set; }
+        public string Line1 { get; set; }
+        public string Line2 { get; set; }
+        public string Suburb { get; set; }
+        public int StateID { get; set; }
+        public string PostCode { get; set; }
+        public int AddressRegion { get; set; }
+        public int LogUserID { get; set; }
 
 
-    }
-
-    public class PatientEmpolymentHistory
-    {
-
-        
-
+        //public int POBPatientID { get; set; }
+        //public int PatientID { get; set; }
+        //public string Country { get; set; }
     }
 }
